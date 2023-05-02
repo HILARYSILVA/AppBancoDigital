@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace AppBancoDigital.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Transacao : ContentPage
+    public partial class Login : ContentPage
     {
-        public Transacao()
+        public Login()
         {
             InitializeComponent();
         }
