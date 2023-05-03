@@ -14,7 +14,7 @@ namespace AppBancoDigital.Service
         {
             string json = await DataService.GetDataFromService("/correntista");
 
-            List<Correntista> arr_pessoas = JsonConvert.DeserializeObject<List<Correntista>>(json);
+            List<Correntista> arr_correntista = JsonConvert.DeserializeObject<List<Correntista>>(json);
 
             return arr_correntista;
         }

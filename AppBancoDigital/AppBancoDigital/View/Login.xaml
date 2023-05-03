@@ -1,12 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.Login">
-    <ContentPage.Content>
+             x:Class="AppBancoDigital.View.Login"
+             Title="Login">
+
+      <ContentPage.Background>
+      <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="DarkOliveGreen"  Offset="0.3" />
+            <GradientStop Color="Black"  Offset="1.3" />
+
+    </LinearGradientBrush>
+    </ContentPage.Background>
+
+      <Grid>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+
+
+            <StackLayout Padding="80" VerticalOptions="Start" 
+                         HorizontalOptions="Center">
+                <Frame BackgroundColor="DarkOliveGreen" 
+                        Margin="3" BorderColor="Black">
+
+
+                    <Label FontSize="Title" 
+                     TextColor="Black" FontAttributes="None" />
+
+                </Frame>
+
+
+
+            </StackLayout>
+
+            <StackLayout VerticalOptions="Center">
+                <StackLayout>
+                        <Label Text="CPF" FontSize="Medium"  
+                               TextColor="Black" HorizontalOptions="Start" />
+                        <Entry x:Name="txt_cpf" Keyboard="CPF"      
+                               ReturnType="Next" ClearButtonVisibility="WhileEditing" />
+
+                        <Label Text="Senha:" FontSize="Medium"  
+                               TextColor="Black" HorizontalOptions="Start" />
+                        <Entry x:Name="txt_senha" Keyboard="Default" 
+                               ReturnType="Done" IsPassword="True" 
+                               ClearButtonVisibility="WhileEditing"/>
+                    </StackLayout>
+               
+ 
+                <Button x:Name="btn_entrar" Text="Entrar" 
+                        BackgroundColor="DarkOliveGreen"  TextColor="#000"
+                        CornerRadius="20" HorizontalOptions="Center" />
+
+                <Label Text="Este usuário não possui CPF?" 
+                       HorizontalOptions="CenterAndExpand" TextColor="Black" Margin="10"/>
+
+                <Button x:Name="btn_ir" Text="ir logo" 
+                        
+                               
+                        FontAttributes="None"  TextTransform="Default" 
+                        BackgroundColor="Transparent" TextColor="Black"
+                        CornerRadius="20" HorizontalOptions="Center"
+                        Clicked="btn_ir_Clicked"/>
+
+            </StackLayout>
+
         </StackLayout>
-    </ContentPage.Content>
+    </Grid>
+
 </ContentPage>

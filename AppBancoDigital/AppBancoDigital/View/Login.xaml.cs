@@ -16,5 +16,10 @@ namespace AppBancoDigital.View
         {
             InitializeComponent();
         }
+
+        private void btn_ir_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
