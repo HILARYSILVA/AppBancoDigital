@@ -15,6 +15,8 @@ namespace AppBancoDigital.View
         public Login()
         {
             InitializeComponent();
+
+            logo.Source = ImageSource.FromResource("AppBancoDigital.Imagem.linkedin.png");
         }
 
         private void btn_ir_Clicked(object sender, EventArgs e)

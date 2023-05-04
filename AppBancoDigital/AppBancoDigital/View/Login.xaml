@@ -4,61 +4,56 @@
              x:Class="AppBancoDigital.View.Login"
              Title="Login">
 
-      <ContentPage.Background>
-      <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-            <GradientStop Color="DarkOliveGreen"  Offset="0.3" />
-            <GradientStop Color="Black"  Offset="1.3" />
-
-    </LinearGradientBrush>
-    </ContentPage.Background>
+    
+        <ContentPage.Background>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                <GradientStop Color="Purple" Offset="0.3" />
+                <GradientStop Color="Red" Offset="1.1" />
+            </LinearGradientBrush>
+        </ContentPage.Background>
+    
 
       <Grid>
         <StackLayout>
 
-
-
-            <StackLayout Padding="80" VerticalOptions="Start" 
+            <StackLayout  Padding="80" VerticalOptions="Start" 
                          HorizontalOptions="Center">
-                <Frame BackgroundColor="DarkOliveGreen" 
-                        Margin="3" BorderColor="Black">
 
-
-                    <Label FontSize="Title" 
-                     TextColor="Black" FontAttributes="None" />
-
-                </Frame>
-
+                <Image x:Name="logo" HeightRequest="90" />
+                
             </StackLayout>
 
             <StackLayout VerticalOptions="Center">
                 <StackLayout>
-                        <Label Text="CPF" FontSize="Medium"  
+                        <Label Text="CPF:" FontSize="Body"
                                TextColor="Black" HorizontalOptions="Start" />
-                        <Entry x:Name="txt_cpf" Keyboard="CPF"      
+                    
+                        <Entry x:Name="txt_cpf" Keyboard="Default"    
                                ReturnType="Next" ClearButtonVisibility="WhileEditing" />
 
-                        <Label Text="Senha:" FontSize="Medium"  
+                        <Label Text="SENHA:" FontSize="Body"  
                                TextColor="Black" HorizontalOptions="Start" />
+                    
                         <Entry x:Name="txt_senha" Keyboard="Default" 
                                ReturnType="Done" IsPassword="True" 
                                ClearButtonVisibility="WhileEditing"/>
                     </StackLayout>
-               
- 
+
+                <Label Text="Este usuário permite um CPF?" FontSize="Body"  
+                               TextColor="Black" HorizontalOptions="Start" />
+
                 <Button x:Name="btn_entrar" Text="Entrar" 
-                        BackgroundColor="DarkOliveGreen"  TextColor="#000"
-                        CornerRadius="20" HorizontalOptions="Center" />
+                        BackgroundColor="Black"  TextColor="White"
+                        CornerRadius="20" HorizontalOptions="Center" VerticalOptions="Center" Margin="157"/>
+                
+                <Label Text="Este usuário  não porta um CPF?" FontSize="Body"  
+                               TextColor="Black" HorizontalOptions="Start" />
 
-                <Label Text="Este usuário não possui CPF?" 
-                       HorizontalOptions="CenterAndExpand" TextColor="Black" Margin="10"/>
 
-                <Button x:Name="btn_ir" Text="ir logo" 
-                        
-                               
-                        FontAttributes="None"  TextTransform="Default" 
-                        BackgroundColor="Transparent" TextColor="Black"
-                        CornerRadius="20" HorizontalOptions="Center"
-                        Clicked="btn_ir_Clicked"/>
+
+
+
+
 
             </StackLayout>
 

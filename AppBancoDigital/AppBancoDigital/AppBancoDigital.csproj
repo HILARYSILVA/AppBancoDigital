@@ -11,6 +11,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Imagem\2560px-Banco_do_Brasil_logo.svg.png" />
+    <None Remove="Imagem\linkedin.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Imagem\linkedin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
