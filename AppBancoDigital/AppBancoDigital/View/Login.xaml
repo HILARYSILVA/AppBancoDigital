@@ -46,8 +46,7 @@
                         BackgroundColor="Black"  TextColor="White"
                         CornerRadius="20" HorizontalOptions="Center" VerticalOptions="Center" Margin="157"/>
                 
-                <Label Text="Este usuário  não porta um CPF?" FontSize="Body"  
-                               TextColor="Black" HorizontalOptions="Start" />
+              
 
 
 
