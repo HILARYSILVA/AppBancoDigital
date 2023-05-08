@@ -39,7 +39,7 @@
                                ClearButtonVisibility="WhileEditing"/>
                     </StackLayout>
 
-                <Label Text="Este usuário permite um CPF?" FontSize="Body"  
+                <Label Text="Este usuário possui um CPF?" FontSize="Body"  
                                TextColor="Black" HorizontalOptions="Start" />
 
                 <Button x:Name="btn_entrar" Text="Entrar" 

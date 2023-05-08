@@ -10,19 +10,24 @@ using Xamarin.Forms.Xaml;
 namespace AppBancoDigital.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Login : ContentPage
+    public partial class Menu : ContentPage
     {
-        public Login()
+        public Menu()
         {
             InitializeComponent();
-
             NavigationPage.SetHasNavigationBar(this, false);
             logo.Source = ImageSource.FromResource("AppBancoDigital.Imagem.linkedin.png");
         }
 
-        private void btn_ir_Clicked(object sender, EventArgs e)
+        private void btn_login_Clicked(object sender, EventArgs e)
         {
+            App.Current.MainPage = new NavigationPage(new View.Login());
+        }
 
+        private void btn_cadastro_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new View.Cadastro());
         }
     }
 }
+   

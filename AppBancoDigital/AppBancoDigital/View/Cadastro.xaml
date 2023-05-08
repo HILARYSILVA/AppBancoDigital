@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Cadastro"
-             Title="Cadastro"
+             Title="Cadastro">
 
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
@@ -10,13 +10,53 @@
             <GradientStop Color="Red" Offset="1.1" />
         </LinearGradientBrush>
     </ContentPage.Background>
-    
-    
-    <ContentPage.Content>
+
+    <Grid>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            <StackLayout  Padding="80" VerticalOptions="Start" 
+                         HorizontalOptions="Center">
+
+                <Image x:Name="logo" HeightRequest="90" />
+
+            </StackLayout>
+
+            <StackLayout VerticalOptions="Center">
+                <StackLayout>
+                    <Label Text="CPF:" FontSize="Body"
+                               TextColor="Black" HorizontalOptions="Start" />
+
+                    <Entry x:Name="txt_cpf" Keyboard="Default"    
+                               ReturnType="Next" ClearButtonVisibility="WhileEditing" />
+
+                    <Label Text="Data de Nascimento" FontSize="Body"
+                               TextColor="Black" HorizontalOptions="Start" />
+
+                    <Entry x:Name="txt_DN" Keyboard="Default"    
+                               ReturnType="Next" ClearButtonVisibility="WhileEditing" />
+
+                    <Label Text="Endereço" FontSize="Body"
+                               TextColor="Black" HorizontalOptions="Start" />
+
+                    <Entry x:Name="txt_endereço" Keyboard="Default"    
+                               ReturnType="Next" ClearButtonVisibility="WhileEditing" />
+
+
+
+                </StackLayout>
+
+               
+
+                <Button x:Name="btn_entrar" Text="Entrar" 
+                        BackgroundColor="Black"  TextColor="White"
+                        CornerRadius="20" HorizontalOptions="Center" VerticalOptions="Center" Margin="157"/>
+
+            </StackLayout>
+
         </StackLayout>
-    </ContentPage.Content>
+    </Grid>
+
 </ContentPage>
+
+
+               
