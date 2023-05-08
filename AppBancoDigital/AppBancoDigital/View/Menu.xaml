@@ -10,9 +10,7 @@
         </LinearGradientBrush>
     </ContentPage.Background>
    
-   
-
-    <ContentPage.Content>
+      <ContentPage.Content>
         <StackLayout>
 
             <StackLayout  Padding="80" VerticalOptions="Start" 
