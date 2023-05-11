@@ -22,16 +22,27 @@
             </StackLayout>
 
             <StackLayout VerticalOptions="Center">
+                <Frame CornerRadius="10"
+                           x:Name="form_login"
+                           VerticalOptions="Center"
+                           BackgroundColor="Transparent"
+                           BorderColor="red"
+                           Margin="5">
+                    <StackLayout>
+                        
+                    <Button x:Name="btn_login" Text="Login do Usuário"
+                                BackgroundColor="DeepPink"  TextColor="White"   Clicked="btn_login_Clicked" FontSize="Body"  BorderWidth="1"
+                                CornerRadius="15" HorizontalOptions="Center" VerticalOptions="Center" Margin="50" BorderColor="Black"/>
 
-                <Button x:Name="btn_login" Text="Login"
-                                BackgroundColor="Black"  TextColor="White" Clicked="btn_login_Clicked" FontSize="Body"  BorderWidth="1"
-                                CornerRadius="15" HorizontalOptions="Center" VerticalOptions="Center" Margin="100" BorderColor="Black"/>
-
-                        <Button x:Name="btn_cadastro" Text="Cadastrar Usuário"
+                    <Button x:Name="btn_cadastro" Text="Cadastrar Usuário"
                                 BackgroundColor="Transparent"  TextColor="White" Clicked="btn_cadastro_Clicked" 
-                                CornerRadius="20" HorizontalOptions="Center" VerticalOptions="Center" Margin="100" BorderColor="Black"/>
+                                CornerRadius="15" HorizontalOptions="Center" VerticalOptions="Center" Margin="50" BorderColor="Black"/>
+                    </StackLayout>
 
-                </StackLayout>
+                </Frame>
+            </StackLayout>
+           
+              
             </StackLayout>
     </ContentPage.Content>
 </ContentPage>

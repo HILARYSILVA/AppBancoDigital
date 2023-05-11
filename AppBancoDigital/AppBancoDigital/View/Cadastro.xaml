@@ -36,7 +36,7 @@
                         <Entry x:Name="txt_cpf" Keyboard="Default"    
                                ReturnType="Next" ClearButtonVisibility="WhileEditing" />
 
-                        <Label Text="Data de Nascimento" FontSize="Body"
+                        <Label Text="Data de Nascimento" FontSize="Body" 
                                TextColor="Black" HorizontalOptions="Start" />
 
                         <Entry x:Name="txt_DN" Keyboard="Default"    
@@ -50,11 +50,11 @@
 
                     </StackLayout>
                 </Frame>
-                <Button x:Name="btn_entrar" Text="Entrar" BorderWidth="1"
-                        BackgroundColor="DeepPink"  TextColor="Black" BorderColor="Black"
+                <Button x:Name="btn_entrar" Text="Entrar" 
+                        BackgroundColor="DeepPink"  TextColor="White" 
                         CornerRadius="6" HorizontalOptions="Center" VerticalOptions="Center" Margin="10"/>
 
-                <Button x:Name="btn_Voltar" Text="Voltar ao Menu" Background="tranparent"  HorizontalOptions="Center"
+                <Button x:Name="btn_Voltar" Text="Voltar ao Menu" Background="Transparent" TextColor="White"  HorizontalOptions="Center"
                         Margin="10" VerticalOptions="Center"
                         Clicked="btn_Voltar_Clicked"/>
             </StackLayout>
