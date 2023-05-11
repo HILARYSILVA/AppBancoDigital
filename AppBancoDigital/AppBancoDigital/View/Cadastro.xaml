@@ -22,35 +22,41 @@
             </StackLayout>
 
             <StackLayout VerticalOptions="Center">
-                <StackLayout>
-                    <Label Text="CPF:" FontSize="Body"
+                <Frame CornerRadius="10"
+                           x:Name="form_login"
+                           VerticalOptions="Center"
+                           BackgroundColor="Transparent"
+                           BorderColor="Black"
+                           Margin="50">
+                    <StackLayout>
+
+                        <Label Text="CPF:" FontSize="Body"
                                TextColor="Black" HorizontalOptions="Start" />
 
-                    <Entry x:Name="txt_cpf" Keyboard="Default"    
+                        <Entry x:Name="txt_cpf" Keyboard="Default"    
                                ReturnType="Next" ClearButtonVisibility="WhileEditing" />
 
-                    <Label Text="Data de Nascimento" FontSize="Body"
+                        <Label Text="Data de Nascimento" FontSize="Body"
                                TextColor="Black" HorizontalOptions="Start" />
 
-                    <Entry x:Name="txt_DN" Keyboard="Default"    
+                        <Entry x:Name="txt_DN" Keyboard="Default"    
                                ReturnType="Next" ClearButtonVisibility="WhileEditing" />
 
-                    <Label Text="Endereço" FontSize="Body"
+                        <Label Text="Endereço" FontSize="Body"
                                TextColor="Black" HorizontalOptions="Start" />
 
-                    <Entry x:Name="txt_endereço" Keyboard="Default"    
+                        <Entry x:Name="txt_endereço" Keyboard="Default"    
                                ReturnType="Next" ClearButtonVisibility="WhileEditing" />
 
+                    </StackLayout>
+                </Frame>
+                <Button x:Name="btn_entrar" Text="Entrar" BorderWidth="1"
+                        BackgroundColor="DeepPink"  TextColor="Black" BorderColor="Black"
+                        CornerRadius="6" HorizontalOptions="Center" VerticalOptions="Center" Margin="10"/>
 
-
-                </StackLayout>
-
-               
-
-                <Button x:Name="btn_entrar" Text="Entrar" 
-                        BackgroundColor="Black"  TextColor="White"
-                        CornerRadius="20" HorizontalOptions="Center" VerticalOptions="Center" Margin="157"/>
-
+                <Button x:Name="btn_Voltar" Text="Voltar ao Menu" Background="tranparent"  HorizontalOptions="Center"
+                        Margin="10" VerticalOptions="Center"
+                        Clicked="btn_Voltar_Clicked"/>
             </StackLayout>
 
         </StackLayout>

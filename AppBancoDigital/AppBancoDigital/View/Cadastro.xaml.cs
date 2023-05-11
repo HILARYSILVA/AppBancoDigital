@@ -18,5 +18,10 @@ namespace AppBancoDigital.View
             NavigationPage.SetHasNavigationBar(this, false);
             logo.Source = ImageSource.FromResource("AppBancoDigital.Imagem.linkedin.png");
         }
+
+        private void btn_Voltar_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

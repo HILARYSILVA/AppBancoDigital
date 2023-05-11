@@ -5,13 +5,13 @@
 
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-            <GradientStop Color="Black"  Offset="0.3" />
+            <GradientStop Color="Purple"  Offset="0.3" />
             <GradientStop Color="Red"  Offset="1.1" />
         </LinearGradientBrush>
     </ContentPage.Background>
    
       <ContentPage.Content>
-          /
+          
         <StackLayout>
 
             <StackLayout  Padding="80" VerticalOptions="Start" 
@@ -25,7 +25,7 @@
 
                 <Button x:Name="btn_login" Text="Login"
                                 BackgroundColor="Black"  TextColor="White" Clicked="btn_login_Clicked" FontSize="Body"  BorderWidth="1"
-                                CornerRadius="5" HorizontalOptions="Center" VerticalOptions="Center" Margin="100" BorderColor="Black"/>
+                                CornerRadius="15" HorizontalOptions="Center" VerticalOptions="Center" Margin="100" BorderColor="Black"/>
 
                         <Button x:Name="btn_cadastro" Text="Cadastrar Usuário"
                                 BackgroundColor="Transparent"  TextColor="White" Clicked="btn_cadastro_Clicked" 

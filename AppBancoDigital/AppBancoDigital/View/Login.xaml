@@ -20,43 +20,45 @@
                          HorizontalOptions="Center">
 
                 <Image x:Name="logo" HeightRequest="90" />
-                
+
             </StackLayout>
 
             <StackLayout VerticalOptions="Center">
-                <StackLayout>
+                <Frame CornerRadius="10"
+                           x:Name="form_login"
+                           VerticalOptions="Center"
+                           BackgroundColor="Transparent"
+                           BorderColor="red"
+                           Margin="20">
+                    <StackLayout>
+
                         <Label Text="CPF:" FontSize="Body"
                                TextColor="Black" HorizontalOptions="Start" />
-                    
+
                         <Entry x:Name="txt_cpf" Keyboard="Default"    
                                ReturnType="Next" ClearButtonVisibility="WhileEditing" />
 
                         <Label Text="SENHA:" FontSize="Body"  
                                TextColor="Black" HorizontalOptions="Start" />
-                    
+
                         <Entry x:Name="txt_senha" Keyboard="Default" 
                                ReturnType="Done" IsPassword="True" 
                                ClearButtonVisibility="WhileEditing"/>
                     </StackLayout>
+                </Frame>
 
-                <Label Text="Este usuário possui um CPF?" FontSize="Body"  
-                               TextColor="Black" HorizontalOptions="Start" />
 
                 <Button x:Name="btn_entrar" Text="Entrar" 
-                        BackgroundColor="Black"  TextColor="White"
-                        CornerRadius="20" HorizontalOptions="Center" VerticalOptions="Center" Margin="157"/>
+                        BackgroundColor="DeepPink"  TextColor="White"
+                        CornerRadius="10" HorizontalOptions="Center" VerticalOptions="Center" Margin="50"/>
                 
-              
-
-
-
-
-
-
-
             </StackLayout>
 
+            <Button x:Name="btn_Voltar" Text="Voltar" BackgroundColor="Transparent" TextColor="White" 
+                  CornerRadius="20" HorizontalOptions="Center" VerticalOptions="Center" Margin="20"
+                        Clicked="btn_Voltar_Clicked_1"/>
         </StackLayout>
+
     </Grid>
 
 </ContentPage>

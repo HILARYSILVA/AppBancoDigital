@@ -24,5 +24,20 @@ namespace AppBancoDigital.View
         {
 
         }
+
+    
+
+        private async void btn_Voltar_Clicked_1(object sender, EventArgs e)
+        {
+            try
+            {
+                await Navigation.PushAsync(new Menu());
+            }
+
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, Ocorreu um erro.", ex.Message, "OK");
+            }
+        }
     }
 }
