@@ -54,7 +54,7 @@
                         BackgroundColor="DeepPink"  TextColor="White" 
                         CornerRadius="6" HorizontalOptions="Center" VerticalOptions="Center" Margin="10"/>
 
-                <Button x:Name="btn_Voltar" Text="Voltar ao Menu" Background="Transparent" TextColor="White"  HorizontalOptions="Center"
+                <Button x:Name="btn_Voltar" Text="Voltar" Background="Transparent" TextColor="White"  HorizontalOptions="Start"
                         Margin="10" VerticalOptions="Center"
                         Clicked="btn_Voltar_Clicked"/>
             </StackLayout>

@@ -19,9 +19,17 @@ namespace AppBancoDigital.View
             logo.Source = ImageSource.FromResource("AppBancoDigital.Imagem.linkedin.png");
         }
 
-        private void btn_Voltar_Clicked(object sender, EventArgs e)
+        private async void btn_Voltar_Clicked(object sender, EventArgs e)
         {
+            try
+            {
+                await Navigation.PushAsync(new Login());
+            }
 
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, Ocorreu um erro.", ex.Message, "OK");
+            }
         }
     }
 }

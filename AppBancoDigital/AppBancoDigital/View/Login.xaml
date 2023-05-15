@@ -44,18 +44,28 @@
                         <Entry x:Name="txt_senha" Keyboard="Default" 
                                ReturnType="Done" IsPassword="True" 
                                ClearButtonVisibility="WhileEditing"/>
+                        
+                        <Label Text="Este usuário não possui Cadastro?" VerticalOptions="Center" FontSize="Body"  
+                               TextColor="Black" HorizontalOptions="Start" />
                     </StackLayout>
                 </Frame>
-
+                <Button x:Name="btn_cadastrar" Text="Cadastrar Usuário"
+                       Background="Transparent" VerticalOptions="Center"
+                       HorizontalOptions="Center" TextColor="White" Clicked="btn_cadastrar_Clicked_1">
+                    
+                </Button>
+                    
+    
+                
 
                 <Button x:Name="btn_entrar" Text="Entrar" 
                         BackgroundColor="DeepPink"  TextColor="White"
-                        CornerRadius="10" HorizontalOptions="Center" VerticalOptions="Center" Margin="50"/>
+                        CornerRadius="10" HorizontalOptions="Center" VerticalOptions="Center" Margin="30"/>
                 
             </StackLayout>
 
             <Button x:Name="btn_Voltar" Text="Voltar" BackgroundColor="Transparent" TextColor="White" 
-                  CornerRadius="20" HorizontalOptions="Center" VerticalOptions="Center" Margin="20"
+                  CornerRadius="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="20"
                         Clicked="btn_Voltar_Clicked_1"/>
         </StackLayout>
 

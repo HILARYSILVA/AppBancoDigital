@@ -24,10 +24,7 @@ namespace AppBancoDigital.View
             App.Current.MainPage = new NavigationPage(new View.Login());
         }
 
-        private void btn_cadastro_Clicked(object sender, EventArgs e)
-        {
-            App.Current.MainPage = new NavigationPage(new View.Cadastro());
-        }
+        
     }
 }
    

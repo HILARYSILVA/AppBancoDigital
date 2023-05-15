@@ -39,5 +39,19 @@ namespace AppBancoDigital.View
                 await DisplayAlert("Ops, Ocorreu um erro.", ex.Message, "OK");
             }
         }
+
+
+        private async void btn_cadastrar_Clicked_1(object sender, EventArgs e)
+        {
+            try
+            {
+                await Navigation.PushAsync(new Cadastro());
+            }
+
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops,Ocorreu um erro.", ex.Message, "OK");
+            }
+        }
     }
 }
