@@ -33,22 +33,24 @@
                     <StackLayout>
 
                         <Label Text="CPF:" FontSize="Body"
-                               TextColor="Black" HorizontalOptions="Start" />
+                               TextColor="White" HorizontalOptions="Start" />
 
                         <Entry x:Name="txt_cpf" Keyboard="Default"    
                                ReturnType="Next" ClearButtonVisibility="WhileEditing" />
 
                         <Label Text="SENHA:" FontSize="Body"  
-                               TextColor="Black" HorizontalOptions="Start" />
+                               TextColor="White" HorizontalOptions="Start" />
 
                         <Entry x:Name="txt_senha" Keyboard="Default" 
                                ReturnType="Done" IsPassword="True" 
                                ClearButtonVisibility="WhileEditing"/>
-                        
-                        <Label Text="Este usuário não possui Cadastro?" VerticalOptions="Center" FontSize="Body"  
-                               TextColor="Black" HorizontalOptions="Start" />
+                       
                     </StackLayout>
                 </Frame>
+
+                <Label Text="Este usuário não possui Cadastro?" VerticalOptions="Start" FontSize="Body"  
+                               TextColor="White" HorizontalOptions="Start" Margin="30" />
+                
                 <Button x:Name="btn_cadastrar" Text="Cadastrar Usuário"
                        Background="Transparent" VerticalOptions="Center"
                        HorizontalOptions="Center" TextColor="White" Clicked="btn_cadastrar_Clicked_1">

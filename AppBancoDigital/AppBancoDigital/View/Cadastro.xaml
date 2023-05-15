@@ -36,11 +36,13 @@
                         <Entry x:Name="txt_cpf" Keyboard="Default"    
                                ReturnType="Next" ClearButtonVisibility="WhileEditing" />
 
-                        <Label Text="Data de Nascimento" FontSize="Body" 
-                               TextColor="Black" HorizontalOptions="Start" />
+                        <Label Text="Data de Nascimento" FontSize="Body" TextColor="Black" />
+                        <DatePicker x:Name="dtcpk_nascimento"
+                                Format="dd/MM/yyyy"
+                                DateSelected="dtcpk_nascimento_DateSelected"
+                                TextColor="White"/>
 
-                        <Entry x:Name="txt_DN" Keyboard="Default"    
-                               ReturnType="Next" ClearButtonVisibility="WhileEditing" />
+                       
 
                         <Label Text="Endereço" FontSize="Body"
                                TextColor="Black" HorizontalOptions="Start" />
