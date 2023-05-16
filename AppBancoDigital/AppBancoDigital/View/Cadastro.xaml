@@ -23,11 +23,11 @@
             </StackLayout>
 
             <StackLayout VerticalOptions="Center">
-                <Frame CornerRadius="5"
+                <Frame CornerRadius="10"
                            x:Name="form_login"
                            VerticalOptions="Center"
                            BackgroundColor="Transparent"
-                           BorderColor="Black"
+                           BorderColor="DeepPink"
                            Margin="20">
                     <StackLayout>
                         

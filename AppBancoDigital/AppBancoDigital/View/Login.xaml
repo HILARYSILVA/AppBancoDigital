@@ -29,7 +29,7 @@
                            x:Name="form_login"
                            VerticalOptions="Center"
                            BackgroundColor="Transparent"
-                           BorderColor="red"
+                           BorderColor="DeepPink"
                            Margin="20">
                     <StackLayout>
 
