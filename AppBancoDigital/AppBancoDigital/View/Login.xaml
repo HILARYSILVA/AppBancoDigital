@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Login"
+             xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:AppBancoDigital"
              Title="Login">
 
     
@@ -32,17 +33,16 @@
                            Margin="20">
                     <StackLayout>
 
-                        <Label Text="CPF:" FontSize="Body"
-                               TextColor="White" HorizontalOptions="Start" />
+                        <Label Text="CPF:" FontSize="Body" TextColor="White" FontAttributes="Bold"/>
+                        <control:MaskedEntry x:Name="txt_cpf" TextColor="White" Keyboard="Numeric" FontAttributes="Bold"
+                                           Mask="XXX.XXX.XXX-XX"/>
 
-                        <Entry x:Name="txt_cpf" Keyboard="Default"    
-                               ReturnType="Next" ClearButtonVisibility="WhileEditing" />
 
                         <Label Text="SENHA:" FontSize="Body"  
                                TextColor="White" HorizontalOptions="Start" />
 
                         <Entry x:Name="txt_senha" Keyboard="Default" 
-                               ReturnType="Done" IsPassword="True" 
+                               ReturnType="Done" IsPassword="True" TextColor="White"
                                ClearButtonVisibility="WhileEditing"/>
                        
                     </StackLayout>
@@ -62,12 +62,12 @@
 
                 <Button x:Name="btn_entrar" Text="Entrar" 
                         BackgroundColor="DeepPink"  TextColor="White"
-                        CornerRadius="10" HorizontalOptions="Center" VerticalOptions="Center" Margin="30"/>
+                        CornerRadius="10" HorizontalOptions="Center" VerticalOptions="Center" Margin="20"/>
                 
             </StackLayout>
 
             <Button x:Name="btn_Voltar" Text="Voltar" BackgroundColor="Transparent" TextColor="White" 
-                  CornerRadius="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="20"
+                  CornerRadius="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="5"
                         Clicked="btn_Voltar_Clicked_1"/>
         </StackLayout>
 

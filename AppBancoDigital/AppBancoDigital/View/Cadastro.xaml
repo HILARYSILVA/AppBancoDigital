@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Cadastro"
+             xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:AppBancoDigital"
              Title="Cadastro">
 
     <ContentPage.Background>
@@ -14,7 +15,7 @@
     <Grid>
         <StackLayout>
 
-            <StackLayout  Padding="80" VerticalOptions="Start" 
+            <StackLayout  Padding="40" VerticalOptions="Start" 
                          HorizontalOptions="Center">
 
                 <Image x:Name="logo" HeightRequest="90" />
@@ -22,21 +23,27 @@
             </StackLayout>
 
             <StackLayout VerticalOptions="Center">
-                <Frame CornerRadius="10"
+                <Frame CornerRadius="5"
                            x:Name="form_login"
                            VerticalOptions="Center"
                            BackgroundColor="Transparent"
                            BorderColor="Black"
-                           Margin="50">
+                           Margin="20">
                     <StackLayout>
+                        
+                        <Label Text="Nome:" FontSize="Body" TextColor="White" 
+                               HorizontalOptions="Start" />
 
-                        <Label Text="CPF:" FontSize="Body"
-                               TextColor="Black" HorizontalOptions="Start" />
-
-                        <Entry x:Name="txt_cpf" Keyboard="Default"    
+                        <Entry x:Name="txt_nome" Keyboard="Default" TextColor="White"
                                ReturnType="Next" ClearButtonVisibility="WhileEditing" />
 
-                        <Label Text="Data de Nascimento" FontSize="Body" TextColor="Black" />
+                        <Label Text="CPF:" FontSize="Body" TextColor="White" FontAttributes="Bold"/>
+                        <control:MaskedEntry x:Name="txt_CPF" TextColor="White" Keyboard="Numeric" FontAttributes="Bold"
+                                           Mask="XXX.XXX.XXX-XX"/>
+
+
+
+                        <Label Text="Data de Nascimento:" FontSize="Body" TextColor="White" />
                         <DatePicker x:Name="dtcpk_nascimento"
                                 Format="dd/MM/yyyy"
                                 DateSelected="dtcpk_nascimento_DateSelected"
@@ -44,20 +51,27 @@
 
                        
 
-                        <Label Text="Endereço" FontSize="Body"
-                               TextColor="Black" HorizontalOptions="Start" />
+                        <Label Text="Endereço:" FontSize="Body" TextColor="White" 
+                               HorizontalOptions="Start" />
 
-                        <Entry x:Name="txt_endereço" Keyboard="Default"    
+                        <Entry x:Name="txt_endereço" Keyboard="Default" TextColor="White"
                                ReturnType="Next" ClearButtonVisibility="WhileEditing" />
 
+                        <Label Text="Senha:" FontSize="Body"  
+                               TextColor="White" HorizontalOptions="Start" />
+
+                        <Entry x:Name="txt_senha" Keyboard="Default" 
+                               ReturnType="Done" IsPassword="True" TextColor="White"
+                               ClearButtonVisibility="WhileEditing"/>
+                        
                     </StackLayout>
                 </Frame>
                 <Button x:Name="btn_entrar" Text="Entrar" 
                         BackgroundColor="DeepPink"  TextColor="White" 
-                        CornerRadius="6" HorizontalOptions="Center" VerticalOptions="Center" Margin="10"/>
+                        CornerRadius="6" HorizontalOptions="Center" VerticalOptions="Center" Margin="5"/>
 
                 <Button x:Name="btn_Voltar" Text="Voltar" Background="Transparent" TextColor="White"  HorizontalOptions="Start"
-                        Margin="10" VerticalOptions="Center"
+                        Margin="2" VerticalOptions="Center"
                         Clicked="btn_Voltar_Clicked"/>
             </StackLayout>
 
