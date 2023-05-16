@@ -28,11 +28,12 @@
                     <Label Text="Seja Bem-Vindo ao seu Banco Digital" FontSize="Large"
                            FontAttributes="Italic"  TextColor="White" HorizontalOptions="Center" />
 
+
                     <Button x:Name="btn_login" Text="Login do Usuário"
                                 BackgroundColor="Transparent"  TextColor="White"   Clicked="btn_login_Clicked" FontSize="Body"  BorderWidth="1"
                                 CornerRadius="15" HorizontalOptions="Center" VerticalOptions="Center" Margin="100" BorderColor="DeepPink"/>
 
-                    </StackLayout>
+                </StackLayout>
 
                 
             </StackLayout>
