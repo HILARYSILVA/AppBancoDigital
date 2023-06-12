@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBancoDigital.View.Conta">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="Purple" Offset="0.3" />
+            <GradientStop Color="Red" Offset="1.1" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <StackLayout  Padding="80" VerticalOptions="Start" 
+                         HorizontalOptions="Center">
+
+        <Image x:Name="logo" HeightRequest="90" />
+
+
+        <Label Text="Conta Pessoal Digital" FontSize="Large"
+                           FontAttributes="Italic"  TextColor="White" HorizontalOptions="Center" />
+    </StackLayout>
+
+    
+
+
+</ContentPage>

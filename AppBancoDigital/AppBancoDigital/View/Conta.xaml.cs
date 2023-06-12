@@ -10,50 +10,40 @@ using Xamarin.Forms.Xaml;
 namespace AppBancoDigital.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Login : ContentPage
+    public partial class Conta : ContentPage
     {
-        public Login()
+        public Conta()
         {
             InitializeComponent();
-
             NavigationPage.SetHasNavigationBar(this, false);
             logo.Source = ImageSource.FromResource("AppBancoDigital.Imagem.linkedin.png");
         }
 
-        private void btn_ir_Clicked(object sender, EventArgs e)
+        private void btn_Voltar_Clicked(object sender, EventArgs e)
         {
-            App.Current.MainPage = new NavigationPage(new View.Conta());
-        
 
-    }
-
-    
+        }
 
         private async void btn_Voltar_Clicked_1(object sender, EventArgs e)
         {
             try
             {
-                await Navigation.PushAsync(new Menu());
+                await Navigation.PushAsync(new Login());
             }
-
             catch (Exception ex)
             {
                 await DisplayAlert("Ops, Ocorreu um erro.", ex.Message, "OK");
             }
         }
 
-
-        private async void btn_cadastrar_Clicked_1(object sender, EventArgs e)
+        private void btn_entrar_Clicked(object sender, EventArgs e)
         {
-            try
-            {
-                await Navigation.PushAsync(new Cadastro());
-            }
 
-            catch (Exception ex)
-            {
-                await DisplayAlert("Ops,Ocorreu um erro.", ex.Message, "OK");
-            }
+        }
+
+        private void btn_Voltar_Clicked_2(object sender, EventArgs e)
+        {
+
         }
     }
 }

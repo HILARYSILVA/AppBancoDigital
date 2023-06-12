@@ -68,7 +68,8 @@
                 </Frame>
                 <Button x:Name="btn_entrar" Text="Entrar" 
                         BackgroundColor="DeepPink"  TextColor="White" 
-                        CornerRadius="6" HorizontalOptions="Center" VerticalOptions="Center" Margin="5"/>
+                        CornerRadius="6" HorizontalOptions="Center" VerticalOptions="Center" Margin="5" 
+                        Clicked="btn_entrar_Clicked"/>
 
                 <Button x:Name="btn_Voltar" Text="Voltar" Background="Transparent" TextColor="White"  HorizontalOptions="Start"
                         Margin="2" VerticalOptions="Center"
