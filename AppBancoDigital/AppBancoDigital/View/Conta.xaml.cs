@@ -36,14 +36,20 @@ namespace AppBancoDigital.View
             }
         }
 
-        private void btn_entrar_Clicked(object sender, EventArgs e)
+      
+
+       
+
+        private async void Voltar_Clicked(object sender, EventArgs e)
         {
-
-        }
-
-        private void btn_Voltar_Clicked_2(object sender, EventArgs e)
-        {
-
+            try
+            {
+                await Navigation.PushAsync(new Login());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, Ocorreu um erro.", ex.Message, "OK");
+            }
         }
     }
 }

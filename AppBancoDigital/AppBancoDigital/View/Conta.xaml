@@ -18,6 +18,11 @@
 
         <Label Text="Conta Pessoal Digital" FontSize="Large"
                            FontAttributes="Italic"  TextColor="White" HorizontalOptions="Center" />
+
+        <Button Text="Voltar" x:Name="Voltar" BackgroundColor="Transparent" TextColor="White" 
+                  CornerRadius="5" HorizontalOptions="Start" VerticalOptions="Start" Margin="20"
+                      Clicked="Voltar_Clicked"/>
+        
     </StackLayout>
 
     
