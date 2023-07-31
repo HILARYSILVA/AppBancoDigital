@@ -13,7 +13,7 @@
     <StackLayout  Padding="80" VerticalOptions="Start" 
                          HorizontalOptions="Center">
 
-        <Image x:Name="logo" HeightRequest="90" />
+        <Image x:Name="logo" HeightRequest="50" />
 
 
         <Label Text="Conta Pessoal Digital" FontSize="Large"
