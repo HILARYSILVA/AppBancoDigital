@@ -13,10 +13,14 @@
   <ItemGroup>
     <None Remove="Imagem\2560px-Banco_do_Brasil_logo.svg.png" />
     <None Remove="Imagem\linkedin.png" />
+    <None Remove="Imagem\pix.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Imagem\linkedin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagem\pix.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
@@ -42,6 +46,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Menu.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Pix.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

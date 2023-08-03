@@ -17,6 +17,7 @@ namespace AppBancoDigital.View
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             logo.Source = ImageSource.FromResource("AppBancoDigital.Imagem.linkedin.png");
+            pix.Source = ImageSource.FromResource("AppBancoDigital.Imagem.pix.png");
         }
 
         private void btn_Voltar_Clicked(object sender, EventArgs e)
@@ -52,9 +53,16 @@ namespace AppBancoDigital.View
             }
         }
 
-        private void btn_pix_Clicked(object sender, EventArgs e)
+        private async void pix_Clicked(object sender, EventArgs e)
         {
-
+            try
+            {
+                await Navigation.PushAsync(new Pix());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, Ocorreu um erro.", ex.Message, "OK");
+            }
         }
     }
 }
