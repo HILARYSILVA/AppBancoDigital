@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Login"
+             NavigationPage.HasNavigationBar="False"
              xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:AppBancoDigital"
              Title="Login">
 
@@ -48,16 +49,13 @@
                     </StackLayout>
                 </Frame>
 
-               
+
 
                 <Button x:Name="btn_cadastrar" Text="Este usuário não possui Cadastro?"
                        Background="Transparent" VerticalOptions="Center"
-                       HorizontalOptions="Center" TextColor="White" Clicked="btn_cadastrar_Clicked_1">
-                    
-                </Button>
-                    
-    
-                
+                       HorizontalOptions="Center" TextColor="White" Clicked="btn_cadastrar_Clicked_1"/>
+
+
 
                 <Button x:Name="btn_entrar" Text="Entrar" 
                         BackgroundColor="DeepPink"  TextColor="White"

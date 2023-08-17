@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AppBancoDigital.Model
 {
-    internal class ChavePix
+    public class ChavePix
     {
     }
 }
