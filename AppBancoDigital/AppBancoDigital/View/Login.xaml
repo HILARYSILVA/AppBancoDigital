@@ -53,7 +53,8 @@
 
                 <Button x:Name="btn_cadastrar" Text="Este usuário não possui Cadastro?"
                        Background="Transparent" VerticalOptions="Center"
-                       HorizontalOptions="Center" TextColor="White" Clicked="btn_cadastrar_Clicked_1"/>
+                       HorizontalOptions="Center" TextColor="White" 
+                        Clicked="btn_cadastrar_Clicked_1"/>
 
 
 

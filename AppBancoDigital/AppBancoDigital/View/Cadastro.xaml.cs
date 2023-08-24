@@ -41,7 +41,7 @@ namespace AppBancoDigital.View
         {
             try
             {
-                await Navigation.PushAsync (new Conta());
+                await Navigation.PushAsync (new Login());
             }
 
             catch (Exception ex)

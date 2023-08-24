@@ -11,6 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="View\pixbt.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="View\pixbt.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Imagem\2560px-Banco_do_Brasil_logo.svg.png" />
     <None Remove="Imagem\linkedin.png" />
   </ItemGroup>
