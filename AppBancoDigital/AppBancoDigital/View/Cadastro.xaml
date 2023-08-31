@@ -45,8 +45,7 @@
 
                         <Label Text="Data de Nascimento:" FontSize="Body" TextColor="White" />
                         <DatePicker x:Name="dtcpk_nascimento"
-                                Format="dd/MM/yyyy"
-                                DateSelected="dtcpk_nascimento_DateSelected"
+                                Format="dd/MM/yyyy"                              
                                 TextColor="White"/>
 
                        
