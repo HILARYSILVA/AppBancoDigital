@@ -48,14 +48,6 @@
                                 Format="dd/MM/yyyy"                              
                                 TextColor="White"/>
 
-                       
-
-                        <Label Text="Endereço:" FontSize="Body" TextColor="White" 
-                               HorizontalOptions="Start" />
-
-                        <Entry x:Name="txt_endereço" Keyboard="Default" TextColor="White"
-                               ReturnType="Next" ClearButtonVisibility="WhileEditing" />
-
                         <Label Text="Senha:" FontSize="Body"  
                                TextColor="White" HorizontalOptions="Start" />
 
