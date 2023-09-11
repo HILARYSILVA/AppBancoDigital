@@ -11,6 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Imagem\NovaPasta\**" />
+    <EmbeddedResource Remove="Imagem\NovaPasta\**" />
+    <None Remove="Imagem\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="View\pixbt.xaml.cs" />
   </ItemGroup>
 
@@ -20,7 +26,9 @@
 
   <ItemGroup>
     <None Remove="Imagem\2560px-Banco_do_Brasil_logo.svg.png" />
+    <None Remove="Imagem\fotopix.png" />
     <None Remove="Imagem\linkedin.png" />
+    <None Remove="Imagem\png-transparent-pix-brands-icon-thumbnail.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,9 +63,18 @@
     <EmbeddedResource Update="View\Menu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="View\Pix\pixb.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="View\Pix\pixb.xaml.cs">
+      <DependentUpon>pixb.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

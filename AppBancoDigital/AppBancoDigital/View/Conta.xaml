@@ -14,18 +14,20 @@
                          HorizontalOptions="Center">
     
         <Image x:Name="logo" HeightRequest="80" />
+       
 
 
         <Label Text="Conta Pessoal Digital" FontSize="Large"
                            FontAttributes="Italic"  TextColor="White" HorizontalOptions="Center" />
+        
+        <ImageButton x:Name="Pix" HeightRequest="90"
+                     Clicked="Pix_Clicked_1"/>
 
         <Button Text="Voltar" x:Name="Voltar" BackgroundColor="Transparent" TextColor="White" 
                   CornerRadius="5" HorizontalOptions="Start" VerticalOptions="Start" Margin="20"
                       Clicked="Voltar_Clicked"/>
 
-        <ImageButton x:Name="pix" Clicked="pix_Clicked" Source="pix.png" BackgroundColor="Transparent"
-                     VerticalOptions="Start"  HorizontalOptions="Fill"  HeightRequest="70" />
-
+        
     </StackLayout>
 
     
