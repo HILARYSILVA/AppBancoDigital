@@ -19,9 +19,10 @@
 
         <Label Text="Conta Pessoal Digital" FontSize="Large"
                            FontAttributes="Italic"  TextColor="White" HorizontalOptions="Center" />
-        
-        <ImageButton x:Name="Pix" HeightRequest="90"
-                     Clicked="Pix_Clicked_1"/>
+      
+            <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="Transparent" CornerRadius="20" Source="https://logospng.org/download/pix/logo-pix-icone-512.png" Padding="5" Clicked="Pix_Clicked_1" Margin="50" />
+            <Label Text="" FontSize="15" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+   
 
         <Button Text="Voltar" x:Name="Voltar" BackgroundColor="Transparent" TextColor="White" 
                   CornerRadius="5" HorizontalOptions="Start" VerticalOptions="Start" Margin="20"

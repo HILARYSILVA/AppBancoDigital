@@ -18,10 +18,12 @@
 
   <ItemGroup>
     <Compile Remove="View\pixbt.xaml.cs" />
+    <Compile Remove="View\Pix\pixb.xaml.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove="View\pixbt.xaml" />
+    <EmbeddedResource Remove="View\Pix\pixb.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -51,6 +53,9 @@
     <EmbeddedResource Update="Menu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="View\Areapix.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="View\Cadastro.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -63,18 +68,9 @@
     <EmbeddedResource Update="View\Menu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Pix\pixb.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Model\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="View\Pix\pixb.xaml.cs">
-      <DependentUpon>pixb.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
 </Project>

@@ -15,6 +15,9 @@ namespace AppBancoDigital.View.Pix
         public pix()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
+            logo.Source = ImageSource.FromResource("AppBancoDigital.Imagem.linkedin.png");
+
         }
     }
 }
