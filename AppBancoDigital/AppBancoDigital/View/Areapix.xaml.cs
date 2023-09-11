@@ -36,7 +36,7 @@ namespace AppBancoDigital.View
         {
             try
             {
-                await Navigation.PushAsync(new PixExibirQrCode());
+                await Navigation.PushAsync(new PixLerQrCode());
 
             }
             catch (Exception ex)
