@@ -78,6 +78,21 @@ namespace AppBancoDigital.View
                 await DisplayAlert("Ops, Ocorreu um erro.", ex.Message, "OK");
             }
         }
-      }
+
+        private void ImageButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImageButton_Clicked_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImageButton_Clicked_2(object sender, EventArgs e)
+        {
+
+        }
+    }
     }
 
