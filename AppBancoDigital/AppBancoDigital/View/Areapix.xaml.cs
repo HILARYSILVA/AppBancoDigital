@@ -57,5 +57,7 @@ namespace AppBancoDigital.View
                 await DisplayAlert("Ops, Ocorreu um erro.", ex.Message, "OK");
             }
         }
+
+       
     }
 }

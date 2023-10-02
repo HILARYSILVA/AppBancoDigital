@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Areapix">
     <ContentPage.Background>
@@ -15,19 +14,19 @@
         <Image x:Name="logo" HeightRequest="100" />
 
         <Label/>
-        
+
         <Label Text="Área Pix" FontSize="Large" TextColor="White" FontAttributes="Italic"  VerticalOptions="Start"
                HorizontalOptions="Fill" />
 
         <ImageButton x:Name="LerQrCode" HeightRequest="80" WidthRequest="50" 
                       BackgroundColor="Transparent" 
-                      CornerRadius="20" Source="https://img.freepik.com/vetores-premium/leitura-do-codigo-qr-me-escaneie-leia-codigo-de-barras-mobilidade-geracao-de-aplicativo-codificacao-reconhecimento-de-icone-ou-leitura-de-codigo-qr-em-estilo-simples_399089-1628.jpg?w=2000" 
+                      CornerRadius="20" Source="https://cdn-icons-png.flaticon.com/512/241/241528.png"
                       Padding="5" Clicked="LerQrCode_Clicked"  Margin="50" 
                      />
 
         <ImageButton x:Name="ExibirQrCode" HeightRequest="80" WidthRequest="50" 
               BackgroundColor="Transparent" 
-              CornerRadius="20" Source="https://t4.ftcdn.net/jpg/04/32/55/23/240_F_432552366_rYFabKfwyX48Y1e5LDumECp7RuudbyTI.jpg" 
+              CornerRadius="20" Source="https://cdn-icons-png.flaticon.com/512/5499/5499710.png"
               Padding="5" Clicked="ExibirQrCode_Clicked" Margin="50" />
 
         <Button Text="Voltar" x:Name="Voltar" BackgroundColor="Transparent" TextColor="White" 
