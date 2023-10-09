@@ -58,6 +58,9 @@ namespace AppBancoDigital.View
             }
         }
 
-       
+        private void Chavepix_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
