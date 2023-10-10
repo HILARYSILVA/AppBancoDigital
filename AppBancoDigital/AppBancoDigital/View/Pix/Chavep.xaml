@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBancoDigital.View.Pix.Chavep">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="Purple" Offset="0.3" />
+            <GradientStop Color="Red" Offset="1.1" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <StackLayout>
+
+        <Image x:Name="logo" HeightRequest="100" />
+
+        <Label Text="Minhas Chaves" TextColor="White" FontSize="Large"/>
+        <Label Text="Para receber pagamentos pelo Pix, basta você informar sua chave cadastrada" TextColor="White" />
+      
+        <Frame CornerRadius="10"
+           x:Name="CHAVE_CPF"
+           VerticalOptions="Center"
+           BackgroundColor="Transparent"
+           BorderColor="DeepPink"
+           Margin="20">
+
+            <Label Text="Chave Pix CPF
+                                                                    
+                   972.137.040-10                                                               >" TextColor="White"/>
+        </Frame>
+
+        <Frame CornerRadius="10"
+            x:Name="CHAVE_EMAIL"
+            VerticalOptions="Center"
+            BackgroundColor="Transparent"
+            BorderColor="DeepPink"
+            Margin="20">
+
+            <Label Text=" Chave Pix Email     
+                           dipoja6099@elixirsd.com                                        >" TextColor="White"/>
+
+        </Frame>
+
+        <Frame CornerRadius="10"
+          x:Name="CHAVE_CELULAR"
+          VerticalOptions="Center"
+          BackgroundColor="Transparent"
+          BorderColor="DeepPink"
+          Margin="20">
+
+            <Label Text=" Chave Pix Celular
+                                                             (41) 99645-5951                                                            >" TextColor="White"/>
+        </Frame>
+
+        <Button Text="Voltar" x:Name="Voltar" BackgroundColor="Transparent" TextColor="White" 
+                      CornerRadius="5" HorizontalOptions="Start" VerticalOptions="Start" Margin="20"
+                      Clicked="Voltar_Clicked"/>
+    </StackLayout>
+</ContentPage>

@@ -58,9 +58,17 @@ namespace AppBancoDigital.View
             }
         }
 
-        private void Chavepix_Clicked(object sender, EventArgs e)
+        private async void Chavepix_Clicked(object sender, EventArgs e)
         {
+            try
+            {
+                await Navigation.PushAsync(new Chavep());
 
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, Ocorreu um erro.", ex.Message, "OK");
+            }
         }
     }
 }
