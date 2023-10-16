@@ -13,8 +13,8 @@
 
         <Image x:Name="logo" HeightRequest="100" />
 
-        <Label Text="Minhas Chaves" TextColor="White" FontSize="Large"/>
-        <Label Text="Para receber pagamentos pelo Pix, basta você informar sua chave cadastrada" TextColor="White" />
+        <Label Text="    Minhas Chaves" TextColor="White" FontSize="Large" HorizontalOptions="StartAndExpand"/>
+        <Label Text="    Para receber pagamentos pelo Pix, basta você informar sua  chave cadastrada" TextColor="White" />
       
         <Frame CornerRadius="10"
            x:Name="CHAVE_CPF"
@@ -49,6 +49,20 @@
 
             <Label Text=" Chave Pix Celular
                                                              (41) 99645-5951                                                            >" TextColor="White"/>
+        </Frame>
+        <Frame CornerRadius="10"
+      x:Name="registrar"
+      VerticalOptions="Center"
+      BackgroundColor="Transparent"
+      BorderColor="DeepPink"
+      Margin="20">
+            <StackLayout>
+                <Label Text="Registrar Chaves" FontSize="Body" TextColor="White" 
+       HorizontalOptions="Start" />
+
+                <Entry x:Name="txt_registrar" Keyboard="Default" TextColor="White"
+       ReturnType="Next" ClearButtonVisibility="WhileEditing" />
+            </StackLayout>
         </Frame>
 
         <Button Text="Voltar" x:Name="Voltar" BackgroundColor="Transparent" TextColor="White" 

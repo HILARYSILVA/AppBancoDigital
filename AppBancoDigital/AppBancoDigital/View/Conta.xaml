@@ -13,12 +13,19 @@
     <StackLayout>
     
         <Image x:Name="logo" HeightRequest="80" />
+        
+        
    
         <ScrollView>
+          
            
-        
-                <StackLayout Grid.Row="1" Padding="20" Spacing="20">
-                    <Label Text="Saldo da Conta" TextColor="White" FontSize="20" FontAttributes="Bold" />
+
+
+            <StackLayout Grid.Row="1" Padding="20" Spacing="20">
+
+                <Label x:Name="lbl_Nome" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black"  FontSize="20"/>
+
+                <Label Text="Saldo da Conta" TextColor="White" FontSize="20" FontAttributes="Bold" />
                     <Label Text="R$ 0,00" TextColor="White" FontSize="24" Margin="0, -20, 0, 0" FontAttributes="Bold"  />
 
                     <ScrollView Orientation="Vertical">

@@ -45,10 +45,13 @@
                                  Padding="1" Clicked="LerQrCode_Clicked"
                                  BorderWidth="1" BorderColor="Black"/>
                         <Label Text="Ler QrCode" TextColor="White"/>
+                        
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
+       
+        
 
         <Button Text="Voltar" x:Name="Voltar" BackgroundColor="Transparent" TextColor="White" 
         CornerRadius="5" HorizontalOptions="Start" VerticalOptions="Start" Margin="20"
