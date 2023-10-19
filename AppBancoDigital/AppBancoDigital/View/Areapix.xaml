@@ -23,7 +23,7 @@
                     <StackLayout WidthRequest="90" Margin="10">
                         <ImageButton HorizontalOptions="CenterAndExpand" 
                   Source="https://cdn-icons-png.flaticon.com/512/263/263069.png" 
-                  CornerRadius="50" BackgroundColor="Transparent" BorderWidth="1" BorderColor="Black"
+                  CornerRadius="50" BackgroundColor="Transparent" BorderWidth="1" BorderColor="White"
                   Padding="12"
                   x:Name="Chavepix" 
                   Clicked="Chavepix_Clicked"/>
@@ -34,7 +34,7 @@
                         <ImageButton x:Name="ExibirQrCode" HeightRequest="80" WidthRequest="50" 
                                  BackgroundColor="Transparent" 
                                  CornerRadius="50" Source="https://cdn-icons-png.flaticon.com/512/5499/5499710.png"
-                                 Padding="8" Clicked="ExibirQrCode_Clicked" BorderWidth="1" BorderColor="Black" />
+                                 Padding="8" Clicked="ExibirQrCode_Clicked" BorderWidth="1" BorderColor="White" />
                         <Label Text="Exibir QrCode" TextColor="White"/>
                     </StackLayout>
 
@@ -43,7 +43,7 @@
                                  BackgroundColor="Transparent" 
                                  CornerRadius="50" Source="https://cdn-icons-png.flaticon.com/512/241/241528.png"
                                  Padding="1" Clicked="LerQrCode_Clicked"
-                                 BorderWidth="1" BorderColor="Black"/>
+                                 BorderWidth="1" BorderColor="White"/>
                         <Label Text="Ler QrCode" TextColor="White"/>
                         
                     </StackLayout>
