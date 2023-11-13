@@ -23,7 +23,7 @@
 
             <StackLayout Grid.Row="1" Padding="20" Spacing="20">
 
-                <Label x:Name="lbl_Nome" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black"  FontSize="20"/>
+                <Label x:Name="lbl_Nome" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="White"  FontSize="20"/>
 
                 <Label Text="Saldo da Conta" TextColor="White" FontSize="20" FontAttributes="Bold" />
                     <Label Text="R$ 0,00" TextColor="White" FontSize="24" Margin="0, -20, 0, 0" FontAttributes="Bold"  />
@@ -64,23 +64,67 @@
                                 <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/4825/4825073.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
                                 <Label Text="Depositar" FontSize="12" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
                             </StackLayout>
-
-
-                        </StackLayout>
+                            
+                            </StackLayout>
+                        
 
                     </ScrollView>
 
+                <ScrollView Orientation="Vertical">
 
-                    
+                    <StackLayout Orientation="Vertical" Padding="5" Spacing="20">
+                        <Frame BackgroundColor="White"  CornerRadius="45" WidthRequest="250" HeightRequest="30">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontSize="15" Text="Novo app Digital, com o que você precisa" TextColor="DeepPink" FontAttributes="Bold"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
 
-                 </StackLayout>
-     </ScrollView>
+                        <Frame BackgroundColor="#f0f1f5" CornerRadius="30" WidthRequest="200" HeightRequest="30">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontSize="13" Text="Investimentos de até 50% de descontos para o seu Banco Digital" TextColor="Black" FontAttributes="Bold"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+
+                        <Frame BackgroundColor="#f0f1f5" CornerRadius="30" WidthRequest="250" HeightRequest="40">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontSize="15" Text=".." TextColor="Black" FontAttributes="Bold"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+                       
+
+
+                    </StackLayout>
                     
-                    <Button Text="Voltar" x:Name="Voltar" BackgroundColor="Transparent" TextColor="White" 
+                </ScrollView>
+                
+
+
+
+            </StackLayout>
+            </ScrollView>
+     
+  
+
+ 
+
+
+        <Button Text="Voltar" x:Name="Voltar" BackgroundColor="Transparent" TextColor="White" 
            CornerRadius="5" HorizontalOptions="Start" VerticalOptions="Start" Margin="20"
                Clicked="Voltar_Clicked"/>
 
-
+        
     </StackLayout>
 
 </ContentPage>

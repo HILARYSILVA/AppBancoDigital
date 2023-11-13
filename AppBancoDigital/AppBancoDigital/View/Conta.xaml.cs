@@ -1,4 +1,5 @@
-﻿using AppBancoDigital.View.Pix;
+﻿using AppBancoDigital.Model;
+using AppBancoDigital.View.Pix;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace AppBancoDigital.View
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             logo.Source = ImageSource.FromResource("AppBancoDigital.Imagem.linkedin.png");
-            lbl_Nome.Text = "Seja bem-vindo(a) " + App.Nome;
+            lbl_Nome.Text = "Seja bem-vindo(a) " + App.DadosCorrentista.Nome;
 
 
         }
